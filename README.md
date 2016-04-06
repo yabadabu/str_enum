@@ -17,10 +17,10 @@ int main(int argc, char** argv)
   eColor g2 = eColor("Green");
   eColor b2 = eColor("Blue");
   eColor kk = eColor("Brown");
-  printf("R is %d -> %s\n", r.value, r.asStr());
-  printf("G is %d -> %s\n", g.value, g.asStr());
-  printf("B is %d -> %s\n", b.value, b.asStr());
-  printf("KK is %d -> %s\n", kk.value, kk.asStr());
+  printf("R is %d -> %s\n", r.value, r.c_str());
+  printf("G is %d -> %s\n", g.value, g.c_str());
+  printf("B is %d -> %s\n", b.value, b.c_str());
+  printf("KK is %d -> %s\n", kk.value, kk.c_str());
   printf("R2 is %d\n", r2.value);
   printf("G2 is %d\n", g2.value);
   printf("B2 is %d\n", b2.value);
