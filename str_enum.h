@@ -22,7 +22,7 @@ public: \
       } \
     }  \
   }                 \
-  const char* asStr() const {           \
+  const char* c_str() const {           \
     static const char* enum_names[] = {  FOR_EACH_PAIR( STR_ENUM_EMIT_FIRST_AS_STR, __VA_ARGS__ ) nullptr }; \
     static const Value enum_vals[]  = {  FOR_EACH_PAIR( STR_ENUM_EMIT_FIRST_AS_VAL, __VA_ARGS__ ) }; \
     for( int i=0; enum_names[i]; ++i )  \
